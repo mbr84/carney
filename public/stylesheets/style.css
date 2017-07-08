@@ -239,25 +239,25 @@ button {
 
 form input[type="submit"] {
     margin: 20px 0 0 0;
-    background: #41D873;
+    background: #2196F3;
     color: white;
     letter-spacing: 2px;
     font-weight: 700;
 }
 
 form input[type="submit"]:hover {
-    background: #1fb04e;
+    background: #037cdd;
 }
 
 button {
-    color: #41D873;
+    color: #2196F3;
     background: rgba(255, 255, 255, 1);
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 button:hover {
-    color: #1fb04e;
+    color: #2196F3;
     background: rgba(255, 255, 255, 0.8);
 }
 
