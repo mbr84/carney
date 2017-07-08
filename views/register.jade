@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container
+    h1 Register
+    p.lead Sign up to learn more about Greg Carney LLC.
+    br
+    form(role='form', action="/register",method="post")
+      div
+        input.form-control(type='text', name="firstname", placeholder='First Name', required)
+      div
+        input.form-control(type='text', name="lastname", placeholder='Last Name', required)
+      div
+        input.form-control(type='email', name="username", placeholder='Email', required)
+      div
+        input.form-control(type='password', name="password", placeholder='Password', pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}", required)
+        label(for="password")
+        div.requirements() Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+        
+      input(type='submit', value="Submit") 

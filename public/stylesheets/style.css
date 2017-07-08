@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+body {
+  color: rgba(255,255,255,.75);
+  background-color: lightsteelblue;
+  font-family: 'PT Sans';
+}
+
+
+header {
+    width: auto;
+    height: 91vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/images/bluesky.jpg');
+}
+
+.header-title {
+    width: 100vw;
+    height: 78%;
+}
+
+.links-container {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.links-container > span {
+    cursor: pointer;
+}
+nav {
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, .75) 50%, rgba(255,255,255,.75) 75%, transparent 100%);
+    transform: translateY(-87px);
+    color: cornflowerblue;
+    font-weight: 700;
+    text-shadow: rgba(255, 255, 255, 1) 0 3px 0;
+}
+
+nav a.email-button, nav a.email-button:focus {
+    color: cornflowerblue;
+    font-weight: 700;
+    text-shadow: rgba(255, 255, 255, 1) 0 3px 0;
+    text-decoration: none;
+}
+
+h1, body {
+    color: white;
+}
+
+.slider {
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    opacity: 1;
+    display: block;
+    transition: opacity .5s ease-in;
+}
+
+.inactive {
+    opacity: 0;
+}
+
+.about-us > article {
+    flex-direction: column;
+}
+.our-blurb {
+    align-self: center;
+    font-size: 1.9rem;
+    color: rgba(255,255,255,.9);
+    text-shadow: 0px 1px 4px rgb(0, 19, 124);
+    transition: all .4s;
+}
+
+.about-us {
+  width: 36vw;
+  padding: 15% 5%;
+  color: white
+}
+
+h2.title {
+    margin: 50px auto;
+    font-size: 52px;
+    font-weight: 700;
+    color: cornflowerblue;
+    text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 0;
+}
+
+article {
+    background-color: rgba(255,255,255,.85);
+    padding: 2% 5% 5% 5%;
+    width: 100%;
+    height: 60vh;
+    box-shadow: inset 0px -5px 25px -5px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.client-logo {
+    width: 25vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20%;
+    align-self: center;
+}
+
+.client-blurb {
+    align-self: center;
+    width: 45%;
+    font-size: 1.8rem;
+    color: midnightblue;
+    text-align: justify;
+}
+
+.client-logo.short {
+    height: 30%;
+}
+
+#hed {
+    height: 40%;
+}
+
+.slide {
+    height: 100%;
+}
+
+.container {
+    padding: 10% 15px;
+}
+input {
+    font-size: 2rem;
+}
+
+form, h1, p, h4{
+    margin: auto;
+}
+
+h1, p, h4 {
+    width: 450px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+form {
+  max-width: 450px;
+}
+form > div {
+  position: relative;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+form > div > input[type="email"],
+form > div > input[type="text"],
+form > div > input[type="password"] {
+  background: #eee;
+  height: 53px;
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+}
+form > div > input[type="email"]:focus,
+form > div > input[type="text"]:focus,
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+form > div > input[type="email"]:focus + label,
+form > div > input[type="text"]:focus + label,
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+form > div > input[type="email"]:valid,
+form > div > input[type="text"]:valid,
+form > div > input[type="password"]:valid {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+form > div > input[type="email"]:valid + label,
+form > div > input[type="text"]:valid + label,
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label,
+form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label,
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+form > div > input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+form > div > input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: 200px;
+  padding: 10px 30px 20px 30px;
+}
+form > div .requirements {
+  padding: 0 30px 0 30px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.28s;
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+form input[type="submit"],
+button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  font-size: 1.75rem;
+  transition: .75s all .2s;
+}
+
+form input[type="submit"] {
+    margin: 20px 0 0 0;
+    background: #41D873;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+form input[type="submit"]:hover {
+    background: #1fb04e;
+}
+
+button {
+    color: #41D873;
+    background: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    color: #1fb04e;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.foot {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.welcome {
+    margin: auto;
+    max-width: 400px;
+    min-width: 20vw;
+    transform: translateY(25vh);
+}
+
+.onboard-msg {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
