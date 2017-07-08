@@ -19,6 +19,6 @@ html
   script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
   script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
   script(type="text/javascript", src="/javascripts/slick-1.6.0/slick/slick.min.js")
-  script(type="text/javascript") $('#about-us').click(() => $('.our-blurb').css({ transform: 'scale(1.2) translateX(25px)', color: 'white' }))
+  script(type="text/javascript") $('#about-us').click(() => {$('.our-blurb').css({ transform: 'scale(1.2) translateX(25px)', color: 'white' }); location.href = "#about"})
   script(type="text/javascript") $(document).ready(function(){ 
       $('.slider').slick({dots: true, infinite: true, speed: 600, autoplay: true, autoplaySpeed: 2500 });});
