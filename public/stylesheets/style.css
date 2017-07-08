@@ -40,13 +40,13 @@ nav {
     transform: translateY(-87px);
     color: cornflowerblue;
     font-weight: 700;
-    text-shadow: rgba(255, 255, 255, 1) 0 3px 0;
+    text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
 }
 
 nav a.email-button, nav a.email-button:focus {
     color: cornflowerblue;
     font-weight: 700;
-    text-shadow: rgba(255, 255, 255, 1) 0 3px 0;
+    text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
     text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ h2.title {
     font-size: 52px;
     font-weight: 700;
     color: cornflowerblue;
-    text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 0;
+    text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0;
 }
 
 article {
