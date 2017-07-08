@@ -281,3 +281,45 @@ button:hover {
 * {
   box-sizing: border-box;
 }
+
+@media(max-width: 500px) {
+    .client-logo {
+        width: 50vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 20%;
+        align-self: center;
+    }
+
+    .client-blurb {
+        align-self: center;
+        width: 98%;
+        font-size: 1.3rem;
+        color: midnightblue;
+        text-align: justify;
+    }
+
+    .about-us {
+        width: 100vw;
+        padding: 15% 5%;
+        color: white;
+    }
+
+    #about-us {
+        display: none;
+    }
+
+    .slider {
+        width: 80%;
+        height: 80vh;
+    }
+
+    article {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .foot {
+        display: none;
+    }
+}
