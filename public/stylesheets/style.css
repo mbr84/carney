@@ -10,6 +10,7 @@ body {
 header {
     width: auto;
     height: 91vh;
+    min-height: 695px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('/images/bluesky.jpg');
@@ -85,11 +86,15 @@ h1, body {
 }
 
 h2.title {
-    margin: 50px auto;
+    margin: 50px auto 25px auto;
     font-size: 52px;
     font-weight: 700;
     color: cornflowerblue;
     text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0;
+}
+
+h2.title.email {
+    margin: 25px auto 50px auto;
 }
 
 article {
