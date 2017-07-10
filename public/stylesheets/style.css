@@ -9,7 +9,7 @@ body {
 
 header {
     width: auto;
-    height: 91vh;
+    height: 105vh;
     min-height: 695px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,6 +94,10 @@ h2.title {
     font-weight: 700;
     color: cornflowerblue;
     text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0;
+}
+
+h2.title.address {
+    font-size: 36px;
 }
 
 h2.title.bottom-line {
@@ -290,6 +294,9 @@ button:hover {
 }
 
 @media(max-width: 500px) {
+    header {
+        height: 125vh;
+    }
     .client-logo {
         width: 50vw;
         background-repeat: no-repeat;
