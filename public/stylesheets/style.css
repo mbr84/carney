@@ -84,7 +84,7 @@ h1, body {
 
 .about-us {
   width: 36vw;
-  padding: 15% 5%;
+  padding: 10% 5%;
   color: white
 }
 
@@ -308,7 +308,7 @@ button:hover {
 
     .about-us {
         width: 100vw;
-        padding: 12% 5%;
+        padding: 15% 5%;
         color: white;
     }
 
