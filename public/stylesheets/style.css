@@ -56,7 +56,7 @@ h1, body {
 }
 
 .slider {
-    width: 60%;
+    width: 65%;
     margin: auto;
     opacity: 1;
     display: block;
@@ -113,7 +113,7 @@ article {
 }
 
 .client-logo {
-    width: 25vw;
+    width: 20vw;
     background-repeat: no-repeat;
     background-size: contain;
     height: 15vh;
@@ -129,11 +129,11 @@ article {
 }
 
 .client-logo.short {
-    height: 25vh;
+    height: 20vh;
 }
 
 #hed {
-    height: 25vh;
+    height: 20vh;
 }
 
 .slide {
