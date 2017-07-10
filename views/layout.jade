@@ -5,8 +5,6 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet', media='screen')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel="stylesheet", type="text/css", href="javascripts/slick-1.6.0/slick/slick.css")
-    link(rel="stylesheet", type="text/css", href="javascripts/slick-1.6.0/slick/slick-theme.css")
   body
     block content
   if (error && error.length > 0)
@@ -18,7 +16,3 @@ html
   script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
   script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
   script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
-  script(type="text/javascript", src="/javascripts/slick-1.6.0/slick/slick.min.js")
-  script(type="text/javascript") $('#about-us').click(() => {$('.our-blurb').css({ transform: 'scale(1.2) translateX(25px)', color: 'white' }); location.href = "#about"})
-  script(type="text/javascript") $(document).ready(function(){ 
-      $('.slider').slick({dots: true, infinite: true, speed: 600, autoplay: true, autoplaySpeed: 40000 });});
