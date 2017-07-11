@@ -282,7 +282,14 @@ button:hover {
     margin: auto;
     max-width: 400px;
     min-width: 20vw;
-    transform: translateY(25vh);
+    transform: translateY(15vh);
+    padding-top: 100px;
+    padding-bottom: 150px;
+    text-shadow: rgba(0, 0, 0, 1) -1px 1px 0;
+}
+
+.welcome h2, .welcome a {
+    color: #93b7f8;
 }
 
 .onboard-msg {

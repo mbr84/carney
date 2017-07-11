@@ -2,21 +2,21 @@ extends layout
 
 block content
   if (!user)
-    
-    div.welcome
-        h2.title.bottom-line Greg Carney LLC 
-        span.onboard-msg Please <a href="/login">Login</a> or <a href="/register">Register</a> to Learn More
+    header    
+        div.welcome
+            h2.title.bottom-line Greg Carney LLC 
+            span.onboard-msg Please <a href="/login">Login</a> or <a href="/register">Register</a> to Learn More
   if (user)
     header
-        .about-us#about
+        .about-us
             h2.title Greg Carney LLC
             h2.title.address 9363 Libby Lane,<br>Eden Prairie, MN 55347
-            h2.title.address.bottom-line 612-240-6996
+            h2.title.address.bottom-line#about 612-240-6996
             .our-blurb Our company is a Manufacturers' Representative for Industrial Duty Fans and Make-Up Air Units, Louvers and Dampers, Fluid Mixers, Sieving Solutions, Heat Exchangers and New Cooling Towers as well as Cooling Tower Repairs. We proudly serve Minnesota, South Dakota, North Dakota, Iowa and Wisconsin for most of our product lines.
     nav
         .links-container
             span.nav-button#about-us About Us
-            span.nav-button#clients(onClick="location.href = '#slider';") Our Clients
+            span.nav-button#clients(onClick="location.href = '#slider';}") Our Clients
             a.email-button(href="mailto:gcarney44@gmail.com") Contact
     main
     .slider.clients#slider
