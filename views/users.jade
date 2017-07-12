@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    if (user && (user.username === "gcarney44@gmail.com" || user.username === "matthew.bramfeld@gmail.com"))
+        h1 users
+        div(class="list-container")
+            ul
+            for user in users
+                li= user

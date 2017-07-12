@@ -37,6 +37,16 @@ router.post('/login', passport.authenticate('local'), function(req, res) {
     res.redirect('/');
 });
 
+router.get('/users', function(req, res) {
+    const usersDoc = Account.find().exec();
+    usersDoc.then(function(users) {
+        res.render('users', { user: req.user, users: users.reverse().map(user => user.username) })
+    }, function(err) {
+        res.redirect('/')
+    })
+
+});
+
 router.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');

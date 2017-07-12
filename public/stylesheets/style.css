@@ -301,6 +301,17 @@ button:hover {
   box-sizing: border-box;
 }
 
+.list-container {
+    width: 75vw;
+    margin: 100px auto auto auto;
+}
+li {
+    color: white;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
 @media(max-width: 500px) {
     header {
         height: 125vh;
