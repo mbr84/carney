@@ -5,7 +5,7 @@ var router = express.Router();
 
 
 router.get('/', function (req, res) {
-    res.render('index', { user : req.user });
+    res.render('index');
 });
 
 router.get('/register', function(req, res) {

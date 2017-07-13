@@ -1,12 +1,7 @@
 extends layout
 
 block content
-  if (!user)
-    header    
-        div.welcome
-            h2.title.bottom-line Greg Carney LLC 
-            span.onboard-msg Please <a href="/login">Login</a> or <a href="/register">Register</a> to Learn More
-  if (user)
+  if (!user || user)
     header
         .about-us
             h2.title Greg Carney LLC
